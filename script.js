@@ -46,6 +46,18 @@ const arcade = () => {
                 "\nSo far I have had a lot of fun every time I've been to this great arcade!");
 }
 
+const newToy = () => {
+    console.log("There is a new toy on the market that has everyone saying " + "'" + getRndWrd(exclamations) + "'" + "!" +
+                "\nIt is called the " + "'" + getRndWrd(sounds) + "'" + "'" + getRndWrd(adjectives) + "'" + "'" + getRndWrd(nouns) + "'" + " box and will be in stores in " + "'" + getRndWrd(months) + "'" + "." +
+                "\nThe " + "'" + getRndWrd(sounds) + "'" + "'" + getRndWrd(adjectives) + "'" + "'" + getRndWrd(nouns) + "'" + " box is a new gadget that lets you do just about anything!" + 
+                "\nIt " + "'" + getRndWrd(verbs) + "'" + "s, it " + "'" + getRndWrd(verbs) + "'" + "s, it even serves " + "'" + getRndWrd(drinks) + "'" + "!" +
+                "\nIt is easy to operate and requires no instructions!" +
+                "\nYou can also have it custom made to be any size you want up to " + "'" + getRndWrd(numbers) + "'" + " inches and " + "'" + getRndWrd(colors) + "'" + " or glow in the dark with no extra charge!" +
+                "\nThe original product is pocket-sized and " + "'" + getRndWrd(colors) + "'" + "." +
+                "\nThere are " + "'" + getRndWrd(numbers) + "'" + " jacks on the product for 6V DC power and for upgrades and add-ons." +
+                "\nYou can add headphones, " + "'" + getRndWrd(pluralNouns) + "'" + ", monitors, " + "'" + getRndWrd(pluralNouns) + "'" + ", and more, and use them all at the same time!");
+}
+
 const nouns = ['evening', 'oxygen', 'daughter', 'whale', 'morning', 'piano', 'sandwich', 'leather', 'hydrogen', 'notebook', 'teacher', 'ice'];
 const pluralNouns = ['evenings', 'oxygens', 'daughters', 'whales', 'mornings', 'pianos', 'sandwiches', 'leathers', 'hydrogens', 'notebooks', 'teachers', 'ices'];
 const verbs = ['paint', 'kick', 'eat', 'pursue', 'thrive', 'acquire', 'grasp', 'persuade', 'investigate', 'emphasize', 'modify', 'search'];
@@ -58,4 +70,5 @@ const drinks = ['coke', 'cider', 'orange juice', 'beer', 'martini', 'hot chocola
 const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
 const colors = ['blue', 'yellow', 'green', 'beige', 'pink', 'gold', 'dark blue', 'brown', 'gray', 'red', 'black', 'silver'];
 
-arcade();
+// arcade();
+newToy();
