@@ -18,14 +18,32 @@
 
 // Create function to get random words
 
+// Create stories
+
 /* for(let i = 0; i < 12; i++){
     const rndNum = Math.floor(Math.random() * 20);
     console.log(rndNum);
 } */
 
-const getLib = libWord => {
-    let word = Math.floor(Math.random() * libWord.length);
-    return libWord[word];
+const getRndWrd = rndWord => {
+    let word = Math.floor(Math.random() * rndWord.length);
+    return rndWord[word];
+}
+
+const arcade = () => {
+    console.log("When I go to the arcade with my " + "'" + getRndWrd(pluralNouns) + "'" + " there are lots of games to play." +
+                "\nI spend lots of time there with my friends. In \"X-men\" you can be different " + "'" + getRndWrd(pluralNouns) + "'" + "." +
+                "\nThe point of the game is to " + "'" +  getRndWrd(verbs) + "'" + " every robot." +
+                "\nYou also need to save people, and then you can go to the next level." +
+                "\nIn \"Star Wars\" you are Luke Skywalker and you try to destroy every " + "'" + getRndWrd(nouns) + "'" + "." +
+                "\nIn a car racing / motorcyle racing game you need to beat every computerized vehicle that you are " + "'" +  getRndWrd(ingVerbs) + "'" + " against." +
+                "\nThere are a whole lot of other cool games." +
+                "\nWhen you play some games you win " + "'" +  getRndWrd(pluralNouns) + "'" + " for certain scores." +
+                "\nOnce you're done you can cash in your tickets to get a big " + "'" + getRndWrd(nouns) + "'" + "." +
+                "\nYou can save your " + "'" + getRndWrd(pluralNouns) + "'" +  " for another time." +
+                "\nWhen I went to this arcade I didn't believe how much fun it would be." +
+                "\nYou might annoy your parents by asking them over and over if you can go back to there." +
+                "\nSo far I have had a lot of fun every time I've been to this great arcade!");
 }
 
 const nouns = ['evening', 'oxygen', 'daughter', 'whale', 'morning', 'piano', 'sandwich', 'leather', 'hydrogen', 'notebook', 'teacher', 'ice'];
@@ -40,4 +58,4 @@ const drinks = ['coke', 'cider', 'orange juice', 'beer', 'martini', 'hot chocola
 const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
 const colors = ['blue', 'yellow', 'green', 'beige', 'pink', 'gold', 'dark blue', 'brown', 'gray', 'red', 'black', 'silver'];
 
-console.log(getLib(nouns));
+arcade();
