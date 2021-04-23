@@ -58,6 +58,22 @@ const newToy = () => {
                 "\nYou can add headphones, " + "'" + getRndWrd(pluralNouns) + "'" + ", monitors, " + "'" + getRndWrd(pluralNouns) + "'" + ", and more, and use them all at the same time!");
 }
 
+const jungle = () => {
+    console.log("I walk through the color jungle." +
+                "\nI take out my "  + "'" + getRndWrd(adjectives) + "'" + " canteen." +
+                "\nThere's a(n) " + "'" + getRndWrd(adjectives) + "'" + " parrot with a " + "'" + getRndWrd(adjectives) + "'" + "'" + getRndWrd(nouns) + "'" + " in his mouth right in front of me in the " + "'" + getRndWrd(adjectives) + "'" + " trees!" +
+                "\nI gaze at his " + "'" + getRndWrd(adjectives) + "'" + "'" + getRndWrd(nouns) + "'" + "." +
+                "\nA sudden sound awakes me from my daydream!" +
+                "\nA panther's " + "'" + getRndWrd(verbs) + "'" + " in front of my head!" +
+                "\nI " + "'" + getRndWrd(verbs) + "'" + " his " + "'" + getRndWrd(adjectives) + "'" + " breath." +
+                "\nI remember I have a packet of " + "'" + getRndWrd(nouns) + "'" + " that makes me go into a deep slumber!" +
+                "\nI " + "'" + getRndWrd(verbs) + "'" + " it away in front of the " + "'" + getRndWrd(nouns) + "'" + "." +
+                "\nYes! He's eating it!" +
+                "\nI " + "'" + getRndWrd(verbs) + "'" + " away through the " + "'" + getRndWrd(adjectives) + "'" + " jungle." +
+                "\nI meet my parents at the tent." +
+                "\nPhew! It's been an exciting day in the jungle.");
+}
+
 const nouns = ['evening', 'oxygen', 'daughter', 'whale', 'morning', 'piano', 'sandwich', 'leather', 'hydrogen', 'notebook', 'teacher', 'ice'];
 const pluralNouns = ['evenings', 'oxygens', 'daughters', 'whales', 'mornings', 'pianos', 'sandwiches', 'leathers', 'hydrogens', 'notebooks', 'teachers', 'ices'];
 const verbs = ['paint', 'kick', 'eat', 'pursue', 'thrive', 'acquire', 'grasp', 'persuade', 'investigate', 'emphasize', 'modify', 'search'];
@@ -71,4 +87,5 @@ const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
 const colors = ['blue', 'yellow', 'green', 'beige', 'pink', 'gold', 'dark blue', 'brown', 'gray', 'red', 'black', 'silver'];
 
 // arcade();
-newToy();
+// newToy();
+jungle();
