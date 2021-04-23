@@ -14,7 +14,9 @@ This project has three pre-made Mad Lib stories. What this project does is gener
 
 Status
 ------
-Currently in development
+Temporarily done
+
+Will continue to develop as I learn
 
 ## Contact
 Created by [@charlesr-web](https://github.com/charlesr-web) - feel free to contact me!
