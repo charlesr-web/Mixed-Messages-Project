@@ -1,5 +1,4 @@
-// Main file for mixed messages
-// Topic is to generate a mad lib story with randomly generated words as the input
+/* Topic is to generate a mad lib story with randomly generated words as the input */
 
 /* 
     Need random variables for:
@@ -16,20 +15,19 @@
     - a color
 */
 
-// Create function to get random words
+/* Create function to get random words */
 
-// Create stories
+/* Create stories */
 
-/* for(let i = 0; i < 12; i++){
-    const rndNum = Math.floor(Math.random() * 20);
-    console.log(rndNum);
-} */
+/* Add function to pick random story */
 
+// pulls a random word from an array
 const getRndWrd = rndWord => {
     let word = Math.floor(Math.random() * rndWord.length);
     return rndWord[word];
 }
 
+// first story
 const arcade = () => {
     console.log("When I go to the arcade with my " + "'" + getRndWrd(pluralNouns) + "'" + " there are lots of games to play." +
                 "\nI spend lots of time there with my friends. In \"X-men\" you can be different " + "'" + getRndWrd(pluralNouns) + "'" + "." +
@@ -46,6 +44,7 @@ const arcade = () => {
                 "\nSo far I have had a lot of fun every time I've been to this great arcade!");
 }
 
+// second story
 const newToy = () => {
     console.log("There is a new toy on the market that has everyone saying " + "'" + getRndWrd(exclamations) + "'" + "!" +
                 "\nIt is called the " + "'" + getRndWrd(sounds) + "'" + "'" + getRndWrd(adjectives) + "'" + "'" + getRndWrd(nouns) + "'" + " box and will be in stores in " + "'" + getRndWrd(months) + "'" + "." +
@@ -58,6 +57,7 @@ const newToy = () => {
                 "\nYou can add headphones, " + "'" + getRndWrd(pluralNouns) + "'" + ", monitors, " + "'" + getRndWrd(pluralNouns) + "'" + ", and more, and use them all at the same time!");
 }
 
+// third story
 const jungle = () => {
     console.log("I walk through the color jungle." +
                 "\nI take out my "  + "'" + getRndWrd(adjectives) + "'" + " canteen." +
@@ -74,6 +74,10 @@ const jungle = () => {
                 "\nPhew! It's been an exciting day in the jungle.");
 }
 
+// generates a random number for stories array
+const getStory = x => Math.floor(Math.random() * x);
+
+// variables for random words
 const nouns = ['evening', 'oxygen', 'daughter', 'whale', 'morning', 'piano', 'sandwich', 'leather', 'hydrogen', 'notebook', 'teacher', 'ice'];
 const pluralNouns = ['evenings', 'oxygens', 'daughters', 'whales', 'mornings', 'pianos', 'sandwiches', 'leathers', 'hydrogens', 'notebooks', 'teachers', 'ices'];
 const verbs = ['paint', 'kick', 'eat', 'pursue', 'thrive', 'acquire', 'grasp', 'persuade', 'investigate', 'emphasize', 'modify', 'search'];
@@ -88,4 +92,10 @@ const colors = ['blue', 'yellow', 'green', 'beige', 'pink', 'gold', 'dark blue',
 
 // arcade();
 // newToy();
-jungle();
+// jungle();
+
+// stores functions in an array
+const stories = [arcade, newToy, jungle];
+
+// gets random story from array
+stories[getStory(stories.length)]();
