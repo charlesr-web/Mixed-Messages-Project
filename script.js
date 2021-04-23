@@ -16,10 +16,17 @@
     - a color
 */
 
+// Create function to get random words
+
 /* for(let i = 0; i < 12; i++){
     const rndNum = Math.floor(Math.random() * 20);
     console.log(rndNum);
 } */
+
+const getLib = libWord => {
+    let word = Math.floor(Math.random() * libWord.length);
+    return libWord[word];
+}
 
 const nouns = ['evening', 'oxygen', 'daughter', 'whale', 'morning', 'piano', 'sandwich', 'leather', 'hydrogen', 'notebook', 'teacher', 'ice'];
 const pluralNouns = ['evenings', 'oxygens', 'daughters', 'whales', 'mornings', 'pianos', 'sandwiches', 'leathers', 'hydrogens', 'notebooks', 'teachers', 'ices'];
@@ -32,3 +39,5 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 const drinks = ['coke', 'cider', 'orange juice', 'beer', 'martini', 'hot chocolate', 'gatorade', 'club soda', 'milk', 'water', 'coffee', 'apple juice'];
 const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
 const colors = ['blue', 'yellow', 'green', 'beige', 'pink', 'gold', 'dark blue', 'brown', 'gray', 'red', 'black', 'silver'];
+
+console.log(getLib(nouns));
